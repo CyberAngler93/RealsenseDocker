@@ -6,9 +6,10 @@ Requirements: Docker.
 Begin by cloning this repo.
 
 Work in progress:
-Start by installing 
+Start by installing docker
 Build with:
 docker build -t robot
+WARNING this will take along time, intel clones the whole linux kernel...
 Once image is built run this docker command.
 
 sudo docker run --rm -ti --net=host --ipc=host --device=/dev/ttyUSB0 \
