@@ -8,6 +8,8 @@ USER ROOT
 ADD aruco.sh /aruco.sh
 ADD rs.sh /rs.sh
 ADD build.sh /build.sh
+ADD launch.sh /launch.sh
+RUN chmod +x /launch.sh
 RUN chmod +x /aruco.sh 
 RUN chmod +x /rs.sh 
 RUN chmod +x /build.sh
@@ -21,3 +23,4 @@ RUN git clone https://github.com/IntelRealSense/librealsense.git
 CMD ["/aruco.sh"]
 CMD ["/rs.sh"]
 CMD ["/build.sh"]
+CMD ["/launch.sh"]
