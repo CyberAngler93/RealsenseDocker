@@ -18,3 +18,5 @@ sudo docker run --rm -ti --net=host --ipc=host --device=/dev/ttyUSB0 \
    /tmp/dataexchange:/tmp/dataexchange \
    robot
    
+# Note
+This was a unsucessfull project, as the docker container does not have a kernel the install process does not work. Was a fun project for learning to get display stuff to transfer out of a docker container.
